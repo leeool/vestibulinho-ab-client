@@ -1,18 +1,11 @@
-import './App.css'
-import Chat from "minimal-chatbot"
-import messages, { firstMessage } from './Data'
+import React from 'react'
+import { MainContainer } from '@/styles/global'
 
 
 function App() {
-
-
   return (
-    <>
-      <Chat
-        data={messages}
-        firstMessage={firstMessage}
-      />
-    </>
+    <MainContainer>
+    </MainContainer>
   )
 }
 
