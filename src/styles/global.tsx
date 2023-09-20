@@ -10,4 +10,11 @@ export const GlobalStyle = createGlobalStyle`
 
 `
 
-export const MainContainer = styled.div``
+export const MainContainer = styled.div`
+max-width: 75rem;
+margin: 0 auto;
+padding: 1rem;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+`
