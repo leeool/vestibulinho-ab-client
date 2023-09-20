@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.div``
+export const Container = styled.div`
+    display: grid;
+    gap: 5rem;
+`
 
 export const Top = styled.div`
     padding: 30px 0 0 50px;
@@ -102,110 +105,9 @@ export const BigLargeIconCircle = styled.div`
     position: absolute;
 `;
 
-export const Blog = styled.div`
-    margin-left: 10vw;
-    margin-top: 5vh;
-    font-size: 52px;
-    font-weight: bold;
-    padding: 30px 0 50px 50px;
-`;
 
-export const BlogContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: solid #dddddd 2px;
-    width: 70vw;
-`;
 
-export const BlogPost = styled.div`
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    border-bottom-left-radius: 0;
-    padding: 15px;
-    height: 30vh;
-    width: 60vw;
-    margin-top: 5vh;
-`;
 
-export const BlogTitle = styled.div`
-    font-size: 24px;
-    font-weight: 500;
-`;
-
-export const BlogContent = styled.div`
-font-size: 18px;
-font-weight: 400;
-margin-top: 2vh;
-`;
-
-export const BlogButton = styled.button`
-    background-color: #fff;
-    color: #CF2E2E;
-    padding: 5px;
-    width: 7vw;
-    height: 5vh;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 550;
-    border: none;
-`;
-
-export const BlogImage = styled.div`
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: -5px -5px #CF2E2E;
-    width: 15vw;
-    height: 30vh;
-    margin-left: 30px;
-    margin-top: 8vh;
-`;
-
-export const Crono = styled.div`
-    height: 50vh;
-    background-color: #fff;
-    color: #CF2E2E;
-    margin-left: 10vw;
-    margin-top: 5vh;
-    font-size: 52px;
-    font-weight: bold;
-    padding: 30px 0 50px 50px;
-`;
-
-export const CronoContainer = styled.div`
-    font-size: 24px;
-    color: #121212;
-    display: flex;
-    flex-direction: row;
-    width: 60vw;
-    justify-content: space-between;
-    margin-top: 5vh;
-`;
-
-export const CronoContainerContainer = styled.div`
-    width: 25vw;
-    justify-content: space-between;
-`;
-
-export const CronoCard = styled.div`
-    background-color: #e5e5e5e5;
-    font-size: 18px;
-    border-radius: 8px;
-    height: 12vh;
-`;
-
-export const CronoDate = styled.div`
-    background-color: #CF2E2E;
-    padding: 15px;
-    color: #fff;
-    font-weight: 500;
-    width: 60px;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-`;
 
 export const Acervo = styled.div`
     height: 50vh;

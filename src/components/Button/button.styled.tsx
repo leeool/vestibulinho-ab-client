@@ -29,7 +29,6 @@ export const ContainerIcon = styled.span`
 svg {
     width: 100%;
     height: 100%;
-    stroke-width: 3px
 }
 
 display: flex;
@@ -37,10 +36,8 @@ justify-content: center;
 align-items: center;
 `
 
-
-
-export const ButtonText = styled.p`
-    font-size: 2rem;
+export const ButtonText = styled.p<{size?: number}>`
+    font-size: ${({size}) => (size || 1)  + "rem"};
     color: #CF2e2e;
     font-weight: 500
 `

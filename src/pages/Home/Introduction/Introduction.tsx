@@ -18,9 +18,9 @@ const Introduction = () => {
       </S.Description>
       
       <Button.Root>
-        <Button.Text>Inscreva-se</Button.Text>
+        <Button.Text size={2}>Inscreva-se</Button.Text>
         <Button.Icon>
-          <ChevronRightSquare />
+          <ChevronRightSquare strokeWidth={3}/>
         </Button.Icon>
       </Button.Root>
       </S.Left>
