@@ -1,12 +1,18 @@
 import React from 'react'
-import { MainContainer } from '@/styles/global'
+import { Container, MainContainer } from '@/styles/global'
 import { Outlet } from 'react-router-dom'
+import Header from './interfaces/Header'
+import Footer from './interfaces/Footer'
 
 
 function App() {
   return (
     <MainContainer>
-      <Outlet />
+      <Header />
+      <Container>
+        <Outlet />
+      </Container>
+      <Footer />
     </MainContainer>
   )
 }

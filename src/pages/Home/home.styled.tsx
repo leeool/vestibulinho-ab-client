@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+export const Container = styled.div``
+
 export const Top = styled.div`
     padding: 30px 0 0 50px;
     height: 100vh;
@@ -214,12 +216,3 @@ export const Veteranos = styled.div`
     height: 50vh;
 `;
 
-export const Footer = styled.div`
-    height: 50vh;
-    background-color: #eeeeee;
-`;
-
-export const FooterBottom = styled.div`
-    height: 10vh;
-    background-color: #CF2E2E;
-`;
