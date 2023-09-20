@@ -3,6 +3,7 @@ import * as S from './Home.Styled';
 import Introduction from "./Introduction/Introduction";
 import Blog from "@/interfaces/Blog";
 import Crono from "./Crono";
+import Gallery from "./Gallery";
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
             <Introduction />
             <Blog />
             <Crono />
+            <Gallery />
             
            {/* <S.Crono>
                 Cronograma 2023

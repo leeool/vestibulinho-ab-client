@@ -106,9 +106,6 @@ export const BigLargeIconCircle = styled.div`
 `;
 
 
-
-
-
 export const Acervo = styled.div`
     height: 50vh;
     background-color: #CF2E2E;

@@ -4,7 +4,8 @@ export const Title = styled.h1`
     font-size: 4rem;
 `
     
-export const SubTitle = styled.h2`
+export const SubTitle = styled.h2<{color?: string}>`
     font-size: 3rem;
-    color: #212121;
+    color: ${({color}) => color || "#212121"};
+    font-weight: 650;
 `
