@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Top = styled.div`
     padding: 30px 0 0 50px;
     height: 100vh;
@@ -134,9 +133,9 @@ export const BlogTitle = styled.div`
 `;
 
 export const BlogContent = styled.div`
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 2vh;
+font-size: 18px;
+font-weight: 400;
+margin-top: 2vh;
 `;
 
 export const BlogButton = styled.button`
@@ -188,11 +187,6 @@ export const CronoContainerContainer = styled.div`
 `;
 
 export const CronoCard = styled.div`
-    display: flex;
-    flex-direction: row;
-`;
-
-export const CronoCardContent = styled.div`
     background-color: #e5e5e5e5;
     font-size: 18px;
     border-radius: 8px;
@@ -209,7 +203,6 @@ export const CronoDate = styled.div`
     align-items: center;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    height: 12vh;
 `;
 
 export const Acervo = styled.div`
