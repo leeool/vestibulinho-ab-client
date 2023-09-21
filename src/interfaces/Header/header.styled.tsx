@@ -40,7 +40,7 @@ export const Item = styled.li`
 
 export const StyledLink = styled(NavLink)`
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
     color: #CF2E2E;
     font-size: 1.25rem;

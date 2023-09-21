@@ -1,12 +1,16 @@
 import colors from "@/styles/theme"
 import styled from "styled-components"
 
-export const Container = styled.button`
+interface ContainerProps {
+  radius?: number
+}
+
+export const Container = styled.button<ContainerProps>`
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 0.25rem 1rem;
-    border-radius: 4px;
+    border-radius: ${({ radius }) => (radius || 4) + "px"};
     width: 100%;
     justify-content: space-between;
     border: none;

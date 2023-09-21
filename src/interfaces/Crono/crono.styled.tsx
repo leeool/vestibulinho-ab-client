@@ -2,10 +2,13 @@ import styled from "styled-components"
 
 export const Crono = styled.div`
     background-color: #fff;
-    color: #CF2E2E;
     display: grid;
-    gap: 2rem;
 `;
+
+export const Paragraph = styled.p`
+color: #555;
+margin-bottom: 2rem;
+`
 
 export const CronoContainer = styled.div`
 display: flex;

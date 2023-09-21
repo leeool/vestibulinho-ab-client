@@ -7,6 +7,7 @@ const Crono = () => {
   return (
     <S.Crono>
       <SubTitle>Cronograma 2023</SubTitle>
+      <S.Paragraph>Fique por dentro de todas as datas importantes do vestibulinho!</S.Paragraph>
       <S.CronoContainer>
         {cronoData.map((p) => (
           <S.Content>
