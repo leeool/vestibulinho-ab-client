@@ -35,6 +35,8 @@ export const BlogContent = styled.div`
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  color: #4f4f4f;
+  font-family: "Roboto", sans-serif;
 `;
 
 export const BlogButton = styled.button`

@@ -19,13 +19,22 @@ const Gallery = () => {
       </S.Col1>
 
       <S.Col2>
-        <S.Image src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"
+        <S.Image
+          src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"
+          data-img={"1"}
         />
-        <S.Image src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"
-        style={{height: "8rem", width: "80%"}}
+        <S.Image
+          src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"
+          data-img={"2"}
         />
-        <S.Image src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"/>
-        <S.Image src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"/>
+        <S.Image
+          src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"
+          data-img={"3"}
+        />
+        <S.Image
+          src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"
+          data-img={"4"}
+        />
       </S.Col2>
     </S.Container>
   );

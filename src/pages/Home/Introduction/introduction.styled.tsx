@@ -15,7 +15,7 @@ export const Background = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 55rem;
     z-index: -1;
 `
 
@@ -24,7 +24,7 @@ font-size: 4rem;
 line-height: 1;
 margin-bottom: 0.5rem;
 `
-    
+
 export const Left = styled.div`
     display: grid;
     align-content: center;
@@ -34,6 +34,7 @@ export const Left = styled.div`
 export const Description = styled.p`
 color: #f5f5f5;
 font-size: 1.125rem;
+font-family: 'Roboto', sans-serif;
 
 span {
     font-weight: bold
@@ -74,8 +75,12 @@ export const Button = styled.button``
 export const Blog = styled.div`
     grid-column: 1 / -1;
     text-align: center;
-    margin-bottom: 0.5rem;
     display: grid;
     justify-items: center;
     gap: 0.5rem;
+    align-content: center;
+
+    span {
+      font-size: 1.5rem;
+    }
 `

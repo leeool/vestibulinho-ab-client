@@ -43,6 +43,7 @@ export const StyledLink = styled(NavLink)`
     font-weight: 600;
     position: relative;
     color: #CF2E2E;
+    font-size: 1.25rem;
 
     &:after {
         content: "";

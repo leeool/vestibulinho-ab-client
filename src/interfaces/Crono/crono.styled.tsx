@@ -8,8 +8,20 @@ export const Crono = styled.div`
 `;
 
 export const CronoContainer = styled.div`
-    display: grid;
+display: flex;
+flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    align-content: start;
+max-height: 35rem;
+max-width: 100%;
+
+@media (max-width: 768px) {
+  max-height: 100%;
+}
 `;
 
 export const Content = styled.div`
@@ -17,23 +29,32 @@ export const Content = styled.div`
     border-radius: 8px;
     overflow: hidden;
     background-color: #e5e5e5e5;
+    height: 5rem;
+    width: 50%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+}
+
 `;
 
 export const CronoCard = styled.div`
     font-size: 18px;
-    border-radius: 8px;
+    background-color: #CF2E2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 5rem;
+    width: 100%;
+    paddng: 0.5rem;
 `;
 
-export const CronoDate = styled.div`
-    background-color: #CF2E2E;
+export const CronoDate = styled.p`
     padding: 1rem;
     color: #fff;
     font-weight: 500;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    max-width: 10ch;
     font-size: 1.25rem;
     text-align: center;
 `;
@@ -47,4 +68,5 @@ export const Description = styled.div`
 
 export const DescText = styled.p`
     color: #212121;
+    font-size: 1.125rem;
 `

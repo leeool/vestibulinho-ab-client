@@ -9,7 +9,7 @@ export const Container = styled.div`
     align-content: center;
     gap: 3rem;
 `
-    
+
 export const Background = styled.div`
     background-color: #CF2E2E;
     width: 100%;
@@ -34,9 +34,38 @@ export const Col2 = styled.div`
 
 export const Image = styled.img`
     width: 100%;
-    height: 10rem;
+    height: 12rem;
     object-fit: cover;
     aspect-ratio: 1 / 4;
     border-radius: 8px;
-    align-self: end;
+    cursor: pointer;
+
+    &[data-img="1"] {
+
+    }
+
+    &[data-img="2"] {
+      height: 9rem;
+      width: 90%;
+      justify-self: start;
+      transform: translateY(10%);
+    }
+
+    &[data-img="3"] {
+      height: 10rem;
+      width: 80%;
+      justify-self: end;
+      transform: translateX(10%);
+    }
+
+    &[data-img="4"] {
+      width: 60%;
+      height: 8rem;
+      transform: translate(-20%, -27%);
+    }
+
+
+    &:hover {
+      filter: brightness(0.8);
+    }
 `

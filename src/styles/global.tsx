@@ -9,7 +9,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 a {
-  color: inherit;
+color: inherit;
+text-decoration: none;
 }
 
 `
@@ -25,9 +26,9 @@ export const MainContainer = styled.main`
 export const Container = styled.div`
   flex: 1;
   width: 100%;
-  padding: 0 0.25rem;
-  max-width: 63rem;
+  padding: 0 1rem;
+  max-width: 70rem;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 8rem;
 
 `
