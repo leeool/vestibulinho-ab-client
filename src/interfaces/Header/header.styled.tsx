@@ -6,6 +6,11 @@ export const Container = styled.nav`
     display: flex;
     align-items: center;
     margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
 `;
 
 export const Nav = styled.ul`

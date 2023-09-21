@@ -36,12 +36,6 @@ export const ContainerIcon = styled.span`
 * {
     color: #CF2e2e;
 }
-
-svg {
-    width: 100%;
-    height: 100%;
-}
-
 display: flex;
 justify-content: center;
 align-items: center;

@@ -80,17 +80,19 @@ const PostPage = () => {
             as={motion.span}
             initial={{ x: "-5%" }}
             animate={{ x: 0 }}
-            data-typing="true"
+            data-typing={!shown}
             transition={{ type: "spring" }}
             ref={(el) => refs.current[index] = el!}
             key={p.length}
           >
-            <TypeAnimation
-              sequence={[p, 400, handleNext]}
-              repeat={undefined}
-              cursor={false}
-              speed={70}
-            />
+            {shown ?
+              <span>{p}</span>
+              : <TypeAnimation
+                sequence={[p, 400, handleNext]}
+                repeat={undefined}
+                cursor={false}
+                speed={70}
+              />}
           </S.Paragraph>
         ))}
       </S.Content>
@@ -100,11 +102,11 @@ const PostPage = () => {
           radius={8}
           disabled={shown}
           onClick={() => setPaused(prev => !prev)}>
-          <Button.Text>
+          <Button.Text size={1.125}>
             {paused ? "Começar" : "Pausar"}
           </Button.Text>
           <Button.Icon>
-            {paused ? <Play size={32} /> : <Pause />}
+            {paused ? <Play /> : <Pause />}
           </Button.Icon>
         </Button.Root>
         <Button.Root
@@ -114,7 +116,7 @@ const PostPage = () => {
             setParagraphs(post.content)
             setShown(true)
           }}>
-          <Button.Text>
+          <Button.Text size={1.125}>
             Exibir
           </Button.Text>
           <Button.Icon>

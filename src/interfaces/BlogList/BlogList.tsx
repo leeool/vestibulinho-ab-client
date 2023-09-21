@@ -20,7 +20,7 @@ const BlogList = () => {
   return (
     <S.List>
       {posts.map((p) => (
-        <BlogPost p={p} />
+        <BlogPost p={p} key={p.id} />
       ))}
     </S.List>
   );

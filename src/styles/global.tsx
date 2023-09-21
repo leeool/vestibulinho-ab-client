@@ -28,6 +28,5 @@ export const Container = styled.div`
   width: 100%;
   padding: 0 1rem;
   max-width: 70rem;
-  margin: 6rem auto;
-
+  margin: 8rem auto;
 `
