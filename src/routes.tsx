@@ -20,6 +20,14 @@ const router = createBrowserRouter([
         Component: Blog
       },
       {
+        path: "/cursos",
+        Component: Cursos
+      },
+      {
+        path: "/cursopage",
+        Component: CursoPage
+      },
+      {
         path: "/blog/:id",
         Component: PostPage
       },
