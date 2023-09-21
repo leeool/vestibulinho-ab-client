@@ -84,7 +84,7 @@ export const TabHeader = styled.div`
   border-bottom: 2px solid #e1e1e1;
 `;
 
-export const TabOption = styled.div`
+export const TabOption = styled.div<{ active: boolean }>`
   flex: 1;
   text-align: center;
   padding: 10px;
