@@ -1,10 +1,10 @@
 import React from 'react'
 import * as S from "./button.styled"
 
-interface Props extends React.HTMLAttributes<HTMLButtonElement> {
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode
   radius?: number
-  props?: React.HTMLAttributes<HTMLButtonElement>
+  props?: React.ButtonHTMLAttributes<HTMLButtonElement>
 }
 
 const Button = ({ children, radius, ...props }: Props) => {

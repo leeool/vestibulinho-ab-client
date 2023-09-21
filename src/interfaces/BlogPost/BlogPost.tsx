@@ -15,7 +15,7 @@ const BlogPost = ({ p }: IProps) => {
         <Link to={`/blog/${p.id}`}>
           <S.BlogTitle>{p.title}</S.BlogTitle>
         </Link>
-        <S.BlogContent>{p.content}</S.BlogContent>
+        <S.BlogContent>{p.content[0]}</S.BlogContent>
         <Link to={`/blog/${p.id}`}>
           <Button.Root style={{ width: "fit-content" }}>
             <Button.Text>Ler mais</Button.Text>

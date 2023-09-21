@@ -2,41 +2,45 @@ import blogData from '@/data/blogData'
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import * as S from "./postPage.styled"
-import { BookOpen, Calendar, Share } from 'lucide-react'
+import { BookOpen, Calendar, Eye, Pause, Play, Share } from 'lucide-react'
 import Button from '@/components/Button'
 import colors from '@/styles/theme'
 import { TypeAnimation } from "react-type-animation"
 import { motion } from 'framer-motion'
+import { useQuery } from 'react-query'
+import api from '@/services/api'
+import { format } from 'date-fns'
 
 const PostPage = () => {
   const { id } = useParams()
-  const [post, setPost] = React.useState(blogData.find(p => p.id === id))
+  const [post, setPost] = React.useState<IPost | null>(null)
   const [paragraphs, setParagraphs] = React.useState<string[]>([])
   const [index, setIndex] = React.useState(0)
   const refs = React.useRef<HTMLSpanElement[]>([])
-
-  const texts = [
-    "paragrafo teste",
-    "teste de paragrafo",
-    "outro teste!"
-  ]
+  const { } = useQuery<IPost>({
+    queryKey: "posts",
+    queryFn: () => api.get(`/blog-post/${id}`).then((res) => res.data),
+    onSuccess: (data) => setPost(data)
+  })
+  const [paused, setPaused] = React.useState(true)
+  const [shown, setShown] = React.useState(false)
 
   React.useEffect(() => {
-    if (index === texts.length) return
-    setParagraphs(prev => [...prev, texts[index]])
-  }, [index, refs.current])
-
+    if (!post || paused) return
+    if (index === post.content.length) return
+    setParagraphs(prev => [...prev, post.content[index]])
+  }, [index, refs.current, post, paused])
 
   const handleNext = () => {
     setIndex(prev => prev + 1)
-
     refs.current[index].setAttribute("data-typing", "false")
   }
 
+  if (!post) return null
   return (
     <S.Container>
       <S.Header>
-        <S.Image src={post?.imageUrl} />
+        <S.Image src={post.imageUrl} />
         <S.Info>
           <S.Title>
             {post?.title}
@@ -45,14 +49,14 @@ const PostPage = () => {
             <S.DescItem>
               <BookOpen color='#fff' size={16} />
               <S.DescText>
-                Tempo de leitura: 12 minutos
+                Tempo de leitura: {post.readingTimeMin} minutos
               </S.DescText>
             </S.DescItem>
 
             <S.DescItem>
               <Calendar color='#fff' size={16} />
               <S.DescText>
-                19 de setembro de 2023
+                {post.createdAt}
               </S.DescText>
             </S.DescItem>
           </S.Description>
@@ -60,7 +64,9 @@ const PostPage = () => {
       </S.Header>
 
       <S.Share>
-        <Button.Root style={{ width: "fit-content" }}>
+        <Button.Root
+          style={{ width: "fit-content" }}
+        >
           <Button.Text>Compartilhar</Button.Text>
           <Button.Icon>
             <Share color={colors.red} />
@@ -77,19 +83,45 @@ const PostPage = () => {
             data-typing="true"
             transition={{ type: "spring" }}
             ref={(el) => refs.current[index] = el!}
+            key={p.length}
           >
             <TypeAnimation
               sequence={[p, 400, handleNext]}
               repeat={undefined}
-              key={p.length}
               cursor={false}
-              speed={50}
+              speed={70}
             />
           </S.Paragraph>
         ))}
       </S.Content>
 
-
+      <S.Controls data-paused={paused && !shown}>
+        <Button.Root
+          radius={8}
+          disabled={shown}
+          onClick={() => setPaused(prev => !prev)}>
+          <Button.Text>
+            {paused ? "Começar" : "Pausar"}
+          </Button.Text>
+          <Button.Icon>
+            {paused ? <Play size={32} /> : <Pause />}
+          </Button.Icon>
+        </Button.Root>
+        <Button.Root
+          radius={8}
+          disabled={shown}
+          onClick={() => {
+            setParagraphs(post.content)
+            setShown(true)
+          }}>
+          <Button.Text>
+            Exibir
+          </Button.Text>
+          <Button.Icon>
+            <Eye />
+          </Button.Icon>
+        </Button.Root>
+      </S.Controls>
     </S.Container>
   )
 }

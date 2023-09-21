@@ -58,6 +58,8 @@ export const Share = styled.div``
 export const Content = styled.div`
   display: grid;
   gap: 1rem;
+  min-height: 20rem;
+  align-items: start;
 `
 
 export const Paragraph = styled.span`
@@ -65,7 +67,10 @@ background-color: #eee;
 position: relative;
   z-index: 1;
 padding: 1rem;
-  border-radius: 4px;
+border-radius: 4px;
+line-height: 1.5;
+font-size: 1.125rem;
+  font-family: 'Roboto', sans-serif;
 
 &[data-typing="true"] {
   span {
@@ -75,13 +80,44 @@ padding: 1rem;
   span::after {
     content: "";
     background-color: ${colors.red};
-    width: 2.5rem;;
+    width: 3rem;;
     height: 100%;
     position: absolute;
-    right: 0rem;
     border-radius: 2px;
     z-index: -1;
     opacity: 0.5;
+    transform: translateX(-100%);
   }
+}
+`
+
+export const Controls = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 1rem;
+  background-color: ${colors.red};
+  padding: 0.5rem;
+  border-radius: 4px;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  gap: 1rem;
+
+  &[data-paused="true"] {
+    animation: tilt-n-move-shaking 2s ease-in-out infinite;
+  }
+
+    @keyframes tilt-n-move-shaking {
+  0% { transform: translate(-50%, 0) rotate(0deg); }
+  20% { transform: translate(-47%, 5px) rotate(5deg); }
+  30% { transform: translate(-50%, 0) rotate(0eg); }
+  40% { transform: translate(-53%, 5px) rotate(-5deg); }
+  50% { transform: translate(-50%, 0) rotate(0deg); }
+  55% { transform: translate(-50%, 0) rotate(0deg); }
+  60% { transform: translate(-50%, 0) rotate(0deg); }
+  80% { transform: translate(-50%, 0) rotate(0deg); }
+  90% { transform: translate(-50%, 0) rotate(0deg); }
+  100% { transform: translate(-50%, 0) rotate(0deg); }
 }
 `

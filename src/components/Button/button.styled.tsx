@@ -25,6 +25,11 @@ export const Container = styled.button<ContainerProps>`
     &:active {
         background-color: #e5e5e5
     }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
 `
 
 export const ContainerIcon = styled.span`

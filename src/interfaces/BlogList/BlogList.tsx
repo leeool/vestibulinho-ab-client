@@ -6,11 +6,20 @@ import { Link } from "react-router-dom";
 import React from "react";
 import * as S from "./blogList.styled";
 import BlogPost from "../BlogPost";
+import { useQuery } from "react-query";
+import api from "@/services/api";
 
 const BlogList = () => {
+  const [posts, setPosts] = React.useState<IPost[]>([]);
+  const { } = useQuery<IPost[]>({
+    queryKey: "posts",
+    queryFn: () => api.get("/blog-post").then((res) => res.data),
+    onSuccess: (data) => setPosts(data)
+  })
+
   return (
     <S.List>
-      {blogData.map((p) => (
+      {posts.map((p) => (
         <BlogPost p={p} />
       ))}
     </S.List>

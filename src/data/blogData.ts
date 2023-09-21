@@ -1,4 +1,4 @@
-const blogData: IPost[] = [
+const blogData: Partial<IPost>[] = [
   {
     id: "1",
     title: "Como Memorizar",
