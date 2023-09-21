@@ -1,12 +1,19 @@
 import React from "react";
 import * as S from './header.styled';
+import { ExternalLink } from "lucide-react";
+import Logo from "@asset/logo-connect-vestibulinho.png"
 
 const Header = () => {
   return (
     <S.Container>
+      <S.Logo src={Logo} />
       <S.Nav>
         <S.Item>
-          <S.StyledLink to='/' className={({ isActive }) => isActive ? "active" : ""}>Início</S.StyledLink>
+          <S.StyledLink
+            to='/'
+            className={({ isActive }) => isActive ? "active" : ""}>
+            Início
+          </S.StyledLink>
         </S.Item>
         <S.Item>
           <S.StyledLink className={({ isActive }) => isActive ? "active" : ""} to='/blog'>Blog</S.StyledLink>
@@ -21,10 +28,13 @@ const Header = () => {
           <S.StyledLink className={({ isActive }) => isActive ? "active" : ""} to='/cursos'>Cursos</S.StyledLink>
         </S.Item>
         <S.Item>
-          <S.StyledLink className={({ isActive }) => isActive ? "active" : ""} to='/acervo'>Acervo</S.StyledLink>
+          <S.StyledLink className={({ isActive }) => isActive ? "active" : ""} to='/galeria'>Galeria</S.StyledLink>
         </S.Item>
         <S.Item data-link="true">
-          <S.StyledLink className={({ isActive }) => isActive ? "active" : ""} to='/inscrição' data-link="true" >Inscrição</S.StyledLink>
+          <S.StyledLink to={"https://www.vestibulinhoetec.com.br/home/"} data-link="true" >
+            Inscrição
+            <ExternalLink size={18} />
+          </S.StyledLink>
         </S.Item>
       </S.Nav>
     </S.Container>

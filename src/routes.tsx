@@ -3,6 +3,8 @@ import App from "@/App";
 import Home from "@/pages/Home";
 import Blog from "./pages/Blog/Blog";
 import PostPage from "./pages/PostPage/PostPage";
+import CronoPage from "./pages/CronoPage/CronoPage";
+import Provas from "./pages/Provas";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,22 @@ const router = createBrowserRouter([
       {
         path: "/blog/:id",
         Component: PostPage
+      },
+      {
+        path: "/cronograma",
+        Component: CronoPage
+      },
+      {
+        path: "/provas",
+        Component: Provas
+      },
+      {
+        path: "/cursos",
+        Component: Home
+      },
+      {
+        path: "/galeria",
+        Component: Home
       }
     ]
   }

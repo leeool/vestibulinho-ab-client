@@ -4,6 +4,7 @@ import Student from "@asset/etequiana.png";
 import Bubble from "@asset/bubble.png";
 import { ChevronsDown, ChevronRightSquare } from "lucide-react";
 import Button from "@/components/Button";
+import { Link } from "react-router-dom"
 
 const Introduction = () => {
   return (
@@ -17,12 +18,15 @@ const Introduction = () => {
           esperando por você.
         </S.Description>
 
-        <Button.Root radius={8}>
-          <Button.Text size={2}>Inscreva-se</Button.Text>
-          <Button.Icon>
-            <ChevronRightSquare strokeWidth={3} />
-          </Button.Icon>
-        </Button.Root>
+
+        <Link to={"https://www.vestibulinhoetec.com.br/home/"}>
+          <Button.Root radius={8}>
+            <Button.Text size={2}>Inscreva-se</Button.Text>
+            <Button.Icon>
+              <ChevronRightSquare strokeWidth={3} />
+            </Button.Icon>
+          </Button.Root>
+        </Link>
       </S.Left>
 
       <span>
@@ -44,7 +48,7 @@ const Introduction = () => {
       </span>
       <S.Blog>
         <span>
-          acompanhe nosso blog
+          fique por dentro das novidades
         </span>
         <ChevronsDown />
       </S.Blog>

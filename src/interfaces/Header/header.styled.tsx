@@ -7,9 +7,11 @@ export const Container = styled.nav`
     align-items: center;
     margin: 0 auto;
     position: fixed;
+    justify-content: space-between;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
     z-index: 100;
 `;
 
@@ -22,6 +24,9 @@ export const Nav = styled.ul`
     list-style: none;
     border-radius: 8px;
     gap: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 `;
 
 export const Item = styled.li`
@@ -43,12 +48,19 @@ export const Item = styled.li`
     }
 `;
 
+export const Logo = styled.img`
+  width: 15rem;
+`
+
 export const StyledLink = styled(NavLink)`
     text-decoration: none;
     font-weight: 500;
     position: relative;
     color: #CF2E2E;
     font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+  gap: 0.5rem;
 
     &:after {
         content: "";

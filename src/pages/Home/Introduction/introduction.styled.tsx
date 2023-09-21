@@ -7,6 +7,7 @@ export const Container = styled.div`
     justify-content: space-between;
     justify-items: center;
     color: #fff;
+    height: 40rem;
 `
 
 export const Background = styled.div`
@@ -15,7 +16,7 @@ export const Background = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 40rem;
+    height: 50rem;
     z-index: -1;
 `
 
