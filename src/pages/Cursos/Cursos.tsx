@@ -14,7 +14,7 @@ export default function Cursos() {
       </S.TagArea>
       <S.Title>Ensino Médio integrado ao técnico</S.Title>
       <S.CardArea>
-        <S.Card to={'/cursopage'}>
+        <S.Card to={"/"}>
           <S.Indicator>
             <BackpackIcon color={'#fff'} />
           </S.Indicator>
@@ -75,14 +75,14 @@ export default function Cursos() {
           </S.Icon>
           <S.CardTitle>Técnico em Administração</S.CardTitle>
         </S.Card>
-        <S.Card to={'/'}>
+        <S.Card to={'/cursopage'}>
           <S.Indicator>
             <GraduationCap color={'#fff'} />
           </S.Indicator>
           <S.Icon>
             <Code2 size={60} />
           </S.Icon>
-          <S.CardTitle>Técnico em Informática</S.CardTitle>
+          <S.CardTitle >Técnico em Informática</S.CardTitle>
         </S.Card>
         <S.Card to={'/'}>
           <S.Indicator>

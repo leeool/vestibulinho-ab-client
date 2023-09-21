@@ -8,13 +8,9 @@ const Gallery = () => {
     <S.Container>
       <S.ImageContainer>
         {array.map((_, index) => (
-          <>
-            {imageLoading && <S.ImageLoading />}
-            <S.Image
-              style={{ opacity: imageLoading ? 0 : 1 }}
-              onLoad={() => setImageLoading(false)} src={`https://firebasestorage.googleapis.com/v0/b/vestibulinho-47053.appspot.com/o/${index + 1}.jpg?alt=media`} />
-          </>
-
+          <S.Image
+            key={index}
+            onLoad={() => setImageLoading(false)} src={`https://firebasestorage.googleapis.com/v0/b/vestibulinho-47053.appspot.com/o/${index + 1}.jpg?alt=media`} />
         ))}
       </S.ImageContainer>
     </S.Container>
