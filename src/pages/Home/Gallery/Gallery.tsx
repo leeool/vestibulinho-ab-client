@@ -24,7 +24,7 @@ const Gallery = () => {
       <S.Col2>
         {array.map((_, index) => (
           <S.Image
-            src={`https://firebasestorage.googleapis.com/v0/b/react-native-4952f.appspot.com/o/${index + 1}.jpg?alt=media`}
+            src={`https://firebasestorage.googleapis.com/v0/b/vestibulinho-47053.appspot.com/o/${index + 1}.jpg?alt=media`}
             data-img={index + 1}
           />
         ))}
