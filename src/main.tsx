@@ -5,8 +5,8 @@ import router from '@/routes'
 import { GlobalStyle } from './styles/global'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+  <>
     <GlobalStyle />
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </>
 )

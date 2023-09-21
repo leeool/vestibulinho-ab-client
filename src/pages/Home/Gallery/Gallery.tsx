@@ -3,13 +3,15 @@ import { SubTitle } from "@/components/Text";
 import { Search } from "lucide-react";
 import React from "react";
 import * as S from "./gallery.styled";
+import eyeImage from "@asset/emoji-eyes.png"
 
 const Gallery = () => {
   return (
     <S.Container>
       <S.Background />
       <S.Col1>
-        <SubTitle color="#fff">Dê uma olhada em nossa escola</SubTitle>
+        <S.Eye src={eyeImage} />
+        <SubTitle color="#fff" size={4.5}>Dê uma olhada em nossa escola</SubTitle>
         <Button.Root>
           <Button.Text>Explorar ETEC Adolpho Berezin</Button.Text>
           <Button.Icon>

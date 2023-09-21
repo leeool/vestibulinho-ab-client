@@ -1,3 +1,4 @@
+import colors from "@/styles/theme"
 import styled from "styled-components"
 
 export const Container = styled.button`
@@ -11,6 +12,7 @@ export const Container = styled.button`
     border: none;
     cursor: pointer;
     background-color: #fff;
+    border: solid 1px ${colors.red};
 
     &:hover {
         background-color: #f2f2f2
@@ -36,8 +38,8 @@ justify-content: center;
 align-items: center;
 `
 
-export const ButtonText = styled.p<{size?: number}>`
-    font-size: ${({size}) => (size || 1)  + "rem"};
+export const ButtonText = styled.p<{ size?: number }>`
+    font-size: ${({ size }) => (size || 1) + "rem"};
     color: #CF2e2e;
     font-weight: 500
 `

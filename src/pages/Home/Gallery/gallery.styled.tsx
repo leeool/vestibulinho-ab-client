@@ -14,15 +14,25 @@ export const Background = styled.div`
     background-color: #CF2E2E;
     width: 100%;
     height: 100%;
+    max-height: 30rem;
     position: absolute;
     z-index: -1;
     left: 0;
+`
+
+export const Eye = styled.img`
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 `
 
 export const Col1 = styled.div`
 display: grid;
 gap: 1rem;
 align-content: center;
+position: relative;
 `
 
 export const Col2 = styled.div`

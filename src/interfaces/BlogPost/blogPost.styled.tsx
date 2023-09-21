@@ -1,11 +1,4 @@
-import styled from "styled-components";
-
-export const Blog = styled.div`
-  font-size: 52px;
-  font-weight: bold;
-  display: grid;
-  gap: 2rem;
-`;
+import styled from "styled-components"
 
 export const BlogContainer = styled.div`
   display: grid;
@@ -18,7 +11,6 @@ export const BlogContainer = styled.div`
   gap: 2rem;
   border-radius: 8px;
   margin-bottom: 1rem;
-  border-bottom-left-radius: 0;
 `;
 
 export const BlogPost = styled.div`
@@ -57,3 +49,4 @@ export const BlogImage = styled.img`
   height: 100%;
   object-fit: cover;
 `;
+
