@@ -5,6 +5,8 @@ import Blog from "./pages/Blog/Blog";
 import PostPage from "./pages/PostPage/PostPage";
 import CronoPage from "./pages/CronoPage/CronoPage";
 import Provas from "./pages/Provas";
+import Cursos from "./pages/Cursos";
+import CursoPage from "./interfaces/CursoPage";
 
 const router = createBrowserRouter([
   {
@@ -38,10 +40,6 @@ const router = createBrowserRouter([
       {
         path: "/provas",
         Component: Provas
-      },
-      {
-        path: "/cursos",
-        Component: Home
       },
       {
         path: "/galeria",
