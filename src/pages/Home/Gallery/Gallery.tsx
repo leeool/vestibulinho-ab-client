@@ -6,6 +6,7 @@ import * as S from "./gallery.styled";
 import eyeImage from "@asset/emoji-eyes.png"
 
 const Gallery = () => {
+  const array = new Array(4).fill(true);
   return (
     <S.Container>
       <S.Background />
@@ -21,22 +22,12 @@ const Gallery = () => {
       </S.Col1>
 
       <S.Col2>
-        <S.Image
-          src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"
-          data-img={"1"}
-        />
-        <S.Image
-          src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"
-          data-img={"2"}
-        />
-        <S.Image
-          src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"
-          data-img={"3"}
-        />
-        <S.Image
-          src="https://img.freepik.com/fotos-gratis/astronauta-de-tiro-completo-na-colagem-da-natureza_23-2150385904.jpg?w=826&t=st=1695245793~exp=1695246393~hmac=5b6869dcaa4aab999b72c650c3a40631c0302283ac93f86fa03e2bfd982939bd"
-          data-img={"4"}
-        />
+        {array.map((_, index) => (
+          <S.Image
+            src={`https://firebasestorage.googleapis.com/v0/b/react-native-4952f.appspot.com/o/${index + 1}.jpg?alt=media`}
+            data-img={index + 1}
+          />
+        ))}
       </S.Col2>
     </S.Container>
   );
