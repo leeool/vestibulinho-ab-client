@@ -7,6 +7,7 @@ import CronoPage from "./pages/CronoPage/CronoPage";
 import Provas from "./pages/Provas";
 import Cursos from "./pages/Cursos";
 import CursoPage from "./interfaces/CursoPage";
+import Gallery from "./pages/Gallery";
 
 const router = createBrowserRouter([
   {
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/galeria",
-        Component: Home
+        Component: Gallery
       }
     ]
   }

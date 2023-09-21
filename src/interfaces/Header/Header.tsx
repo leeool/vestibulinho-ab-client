@@ -2,11 +2,14 @@ import React from "react";
 import * as S from './header.styled';
 import { ExternalLink } from "lucide-react";
 import Logo from "@asset/logo-connect-vestibulinho.png"
+import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
     <S.Container>
-      <S.Logo src={Logo} />
+      <Link to={"/"}>
+        <S.Logo src={Logo} />
+      </Link>
       <S.Nav>
         <S.Item>
           <S.StyledLink
