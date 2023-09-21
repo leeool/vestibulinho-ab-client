@@ -10,7 +10,7 @@ const Gallery = () => {
         {array.map((_, index) => (
           <S.Image
             key={index}
-            onLoad={() => setImageLoading(false)} src={`https://firebasestorage.googleapis.com/v0/b/vestibulinho-47053.appspot.com/o/${index + 1}.jpg?alt=media`} />
+            onLoad={() => setImageLoading(false)} src={`https://firebasestorage.googleapis.com/v0/b/vestibulinho2-72923.appspot.com/o/${index + 1}-min.jpg?alt=media`} />
         ))}
       </S.ImageContainer>
     </S.Container>
