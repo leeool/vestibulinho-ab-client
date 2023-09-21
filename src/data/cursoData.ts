@@ -17,7 +17,38 @@ const cursoData: CursoData[] = [
         criação de sites, banco de dados, a manutenção de computadores, redes e muito mais.`],
         cursoImage: "https://img.freepik.com/fotos-gratis/plano-de-fundo-de-programacao-com-pessoa-trabalhando-com-codigos-no-computador_23-2150010115.jpg?w=740&t=st=1695278356~exp=1695278956~hmac=34f4d7be4ecd4da857dae86b0bf5fc0a9278f4647be416e384e4bd1c43347147",
         turno: "noite",
-        duracao: "3 semanas"
+        duracao: "3 semestres",
+        conteudo: {
+            '1semestre': [
+                "Linguagem, Trabalho e Tecnologia",
+                "Suporte ao Usuário",
+                "Operação e Configuração de Aplicativos I",
+                "Gestão de Sistemas Operacionais I",
+                "Sistemas de Tecnologia de Informação e Comunicação",
+                "Instalação e Manutenção de Computadores",
+                "Programação de Computadores I",
+                "Modelagem de Banco de Dados"
+            ],
+            '2semestre': [
+                "Suporte em Informática",
+                "Operação e Configuração de Aplicativos II",
+                "Gestão de Sistemas Operacionais II",
+                "Redes de Comunicação de Dados I",
+                "Programação de Computadores II",
+                "Suporte a Banco de Dados",
+                "Planejamento do Trabalho de Conclusão de Curso (TCC) em Informática"
+            ],
+            '3semestre': [
+                "Inglês Instrumental",
+                "Gestão de Sistemas Operacionais III",
+                "Segurança Digital",
+                "Redes de Comunicação de Dados II 4",
+                "Desenvolvimento de Sistemas Embarcados",
+                "Computação em Nuvem e Mídias Sociais",
+                "Ética e Cidadania Organizacional",
+                "Desenvolvimento do Trabalho de Conclusão de Curso (TCC) em Informática"
+            ],
+        }
     },
     {
         id: 2,
@@ -33,7 +64,12 @@ const cursoData: CursoData[] = [
         `],
         cursoImage: "https://img.freepik.com/fotos-gratis/imagem-de-close-up-de-programador-trabalhando-em-sua-mesa-no-escritorio_1098-18707.jpg?w=740&t=st=1695278250~exp=1695278850~hmac=3a3926c8309980ab08483e9c32321a3b65b4951aec3cad7cc72d4df37e966dc2",
         turno: "tarde",
-        duracao: "3 anos"
+        duracao: "3 anos",
+        conteudo: {
+            "1semestre":[
+                ""
+            ]
+        }
     },
     {
         id: 3,
