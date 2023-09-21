@@ -16,7 +16,7 @@ const Footer = () => {
           </S.Content>
           <S.Content>
             <S.Title>Contato da ETEC</S.Title>
-            <S.Item href="mailto: e107acad@cps.sp.gov.br">emailtec@email.com</S.Item>
+            <S.Item href="mailto: e107acad@cps.sp.gov.br">e107acad@cps.sp.gov.br</S.Item>
             <S.Item>(13) 3448-3800</S.Item>
           </S.Content>
           <S.Content>
