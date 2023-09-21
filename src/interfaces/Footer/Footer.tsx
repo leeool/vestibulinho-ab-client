@@ -1,6 +1,8 @@
 import React from "react";
 import * as S from "./footer.styled";
 
+const currentYear = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <>
@@ -28,7 +30,7 @@ const Footer = () => {
       </S.Footer>
       <S.FooterBottom>
         <S.Copy>
-          © Todos direitos reservados
+          © {currentYear} Desenvolvido por Equipe Windowally. Todos os direitos reservados.
         </S.Copy>
       </S.FooterBottom>
     </>
