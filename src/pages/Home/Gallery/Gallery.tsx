@@ -4,6 +4,7 @@ import { Search } from "lucide-react";
 import React from "react";
 import * as S from "./gallery.styled";
 import eyeImage from "@asset/emoji-eyes.png"
+import { Link } from "react-router-dom"
 
 const Gallery = () => {
   const array = new Array(4).fill(true);
@@ -13,12 +14,14 @@ const Gallery = () => {
       <S.Col1>
         <S.Eye src={eyeImage} />
         <SubTitle color="#fff" size={4.5}>Dê uma olhada em nossa escola</SubTitle>
-        <Button.Root>
-          <Button.Text>Explorar ETEC Adolpho Berezin</Button.Text>
-          <Button.Icon>
-            <Search />
-          </Button.Icon>
-        </Button.Root>
+        <Link to={"/galeria"}>
+          <Button.Root>
+            <Button.Text>Explorar ETEC Adolpho Berezin</Button.Text>
+            <Button.Icon>
+              <Search />
+            </Button.Icon>
+          </Button.Root>
+        </Link>
       </S.Col1>
 
       <S.Col2>
